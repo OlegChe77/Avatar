@@ -39,6 +39,6 @@ export async function generateAvatarFromImage(base64ImageData: string, mimeType:
 
   } catch (error) {
     console.error("Error calling Gemini API:", error);
-    throw new Error("Failed to generate avatar from Gemini API.");
+    throw error;
   }
 }

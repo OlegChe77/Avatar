@@ -45,20 +45,20 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({
           className="flex flex-col items-center justify-center text-gray-400 hover:text-purple-400 transition-colors"
         >
           <UploadIcon className="w-12 h-12 mb-2" />
-          <span className="font-semibold">Click to upload your photo</span>
-          <span className="text-sm">PNG, JPG, or WEBP</span>
+          <span className="font-semibold">Нажмите, чтобы загрузить фото</span>
+          <span className="text-sm">PNG, JPG или WEBP</span>
         </button>
       ) : (
         <div className="w-full flex flex-col items-center">
           <div className="mb-4 w-40 h-40 rounded-xl overflow-hidden border-4 border-gray-600 shadow-lg bg-gray-700">
-            <img src={previewUrl} alt="Preview" className="w-full h-full object-contain" />
+            <img src={previewUrl} alt="Предпросмотр" className="w-full h-full object-contain" />
           </div>
           <div className="flex space-x-4">
              <button
               onClick={handleUploadClick}
               className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-500 transition-colors text-sm font-medium"
             >
-              Change Photo
+              Сменить фото
             </button>
             <button
               onClick={onGenerate}
@@ -71,12 +71,12 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                   </svg>
-                  Generating...
+                  Генерация...
                 </>
               ) : (
                 <>
                   <SparklesIcon className="w-5 h-5 mr-2" />
-                  Generate Avatars
+                  Создать аватары
                 </>
               )}
             </button>
