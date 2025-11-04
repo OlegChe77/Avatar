@@ -1,0 +1,5 @@
+{
+  "name": "AI Avatar Generator",
+  "description": "Upload your photo and generate six unique avatars in different popular cartoon styles using AI. See yourself as a character from The Simpsons, South Park, Disney, and more, while keeping your facial features recognizable.",
+  "requestFramePermissions": []
+}
